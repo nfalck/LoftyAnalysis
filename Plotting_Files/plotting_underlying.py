@@ -155,5 +155,5 @@ def plot_box_by_series(df, title, output_dir="."):
 df = pd.read_csv("properties_v7_with_ratios.csv")
 df = prep_df(df)
 
-plot_hist_by_series(df, "Distribution of Underlying Asset Price by Property Type", output_dir=".")
-plot_box_by_series(df,  "Distribution of Underlying Asset Price by Property Type", output_dir=".")
+plot_hist_by_series(df, "Distribution of Underlying Asset Price by Property Type", output_dir="..")
+plot_box_by_series(df,  "Distribution of Underlying Asset Price by Property Type", output_dir="..")

@@ -140,8 +140,8 @@ def plot_box_by_series(df, value_col, title, x_label, cap_pct=95, output_dir="."
     plt.close(fig)
     print(f"Saved: {fname}")
 
-all_df = pd.read_csv("per_property_tokens_all_rounded_v7.csv")
-inv_df = pd.read_csv("per_property_tokens_investors_rounded_v7.csv")
+all_df = pd.read_csv("../per_property_tokens_all_rounded_v7.csv")
+inv_df = pd.read_csv("../per_property_tokens_investors_rounded_v7.csv")
 
 for df, dataset_label in [(all_df, "ALL wallets"), (inv_df, "INVESTORS only")]:
     for value_col, value_name in [
@@ -150,8 +150,8 @@ for df, dataset_label in [(all_df, "ALL wallets"), (inv_df, "INVESTORS only")]:
     ]:
         t  = f"{value_name} tokens held per holder - {dataset_label}"
         xl = f"{value_name} tokens held per holder"
-        plot_hist_by_series(df, value_col, t, xl, output_dir=".")
-        plot_box_by_series(df, value_col, t, xl, output_dir=".")
+        plot_hist_by_series(df, value_col, t, xl, output_dir="..")
+        plot_box_by_series(df, value_col, t, xl, output_dir="..")
 
 # ALL wallets - MEAN
 plot_hist_by_series(
