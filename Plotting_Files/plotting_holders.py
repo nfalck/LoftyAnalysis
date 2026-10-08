@@ -228,8 +228,8 @@ def plot_box_by_series(df: pd.DataFrame, title: str):
 
 
 # Read the CSVs
-all_df = pd.read_csv("../holders_per_property_all_v7.csv")
-inv_df = pd.read_csv("../holders_per_property_investors_only_v7.csv")
+all_df = pd.read_csv("../Scraped_Data/holders_per_property_all_v7.csv")
+inv_df = pd.read_csv("../Scraped_Data/holders_per_property_investors_only_v7.csv")
 
 # Plot the histograms and boxplots
 plot_hist_by_series(all_df, "Holders per property - ALL wallets")

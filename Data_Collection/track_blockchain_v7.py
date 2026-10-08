@@ -464,7 +464,7 @@ for i, asset in enumerate(assets, start=1):
 pd.DataFrame(transaction_rows).to_csv("transactions_v7.csv", index=False)
 pd.DataFrame(transaction_rows).to_parquet("transactions.parquet", index=False)
 
-pd.DataFrame(overview_rows).to_csv("../overview_v7.csv", index=False)
+pd.DataFrame(overview_rows).to_csv("../Scraped_Data/overview_v7.csv", index=False)
 pd.DataFrame(overview_rows).to_parquet("overview.parquet", index=False)
 
 pd.DataFrame(holder_rows).to_csv("holders_v7.csv", index=False)
