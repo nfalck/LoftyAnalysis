@@ -2,9 +2,9 @@ import pandas as pd
 import numpy as np
 
 PANEL_FILE = "transaction_panel_v5_clean.xlsx"
-VNQ_FILE = "VNQ.xlsx"
-MORTGAGE_FILE = "Res_mortgage_ret.xlsx"
-ETH_FILE = "eth-usd-max.csv"
+VNQ_FILE = "Macro_Data/VNQ.xlsx"
+MORTGAGE_FILE = "Macro_Data/Res_mortgage_ret.xlsx"
+ETH_FILE = "Macro_Data/eth-usd-max.csv"
 OUTPUT_FILE = "transaction_panel_v6_clean.xlsx"
 
 Y = "log_net_flow"
