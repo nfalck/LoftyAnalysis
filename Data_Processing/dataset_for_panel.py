@@ -3,11 +3,11 @@ import numpy as np
 import openpyxl
 
 TXNS_FILE = "transactions_v7_good.csv"
-VIX_FILE = "Macro_Data/VIXCLS_daily.xlsx"
-DGS10_FILE = "Macro_Data/DGS10_daily.xlsx"
-DGS1MO_FILE = "Macro_Data/DGS1MO_daily.xlsx"
-ADS_FILE = "Macro_Data/ADS_Index_Most_Current_Vintage.xlsx"
-ETH_FILE = "Macro_Data/eth-usd-max.csv"
+VIX_FILE = "../Macro_Data/VIXCLS_daily.xlsx"
+DGS10_FILE = "../Macro_Data/DGS10_daily.xlsx"
+DGS1MO_FILE = "../Macro_Data/DGS1MO_daily.xlsx"
+ADS_FILE = "../Macro_Data/ADS_Index_Most_Current_Vintage.xlsx"
+ETH_FILE = "../Macro_Data/eth-usd-max.csv"
 OUTPUT_FILE = "transaction_panel_v4.xlsx"
 
 tx = pd.read_csv(TXNS_FILE)
